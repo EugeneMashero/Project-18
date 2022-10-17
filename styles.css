@@ -9,7 +9,7 @@ html{
 body{
   height:100vh;
   font-family: 'Lato', sans-serif;
-  font-size:1.2rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   margin-left: 4rem;
   overflow:;
@@ -38,19 +38,21 @@ header{
   float: left;
   padding-top: 2rem;
 }
+
 li{
    list-style-type:none;
 }
 a{
   text-decoration: none;
   color:black;
+}
+.nav-link{
   margin-right: 10rem
 }
 section:first-of-type{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
   margin-top:5rem;
   font-size: 1.5rem;
 }
@@ -65,6 +67,7 @@ section:first-of-type{
 #submit{
   display: block;
   margin-left: 8rem;
+  margin-bottom: 8rem;
   font-weight: bold;
   background-color: yellow;
   border: 1px solid white;
@@ -73,5 +76,91 @@ section:first-of-type{
   height: 2rem;
 }
 i{
- float: left;
+ color:orange;
+ font-size:5rem;
+ position:absolute;
+ left:-130px;
+ top:-10px;
+}
+.how-it-works-1, .how-it-works-2, .how-it-works-3{
+  position: relative;
+  margin-bottom: 8rem;
+}
+.how-it-works-2, .how-it-works-3{
+    position: relative;
+    left:6rem;
+}
+#how-it-works{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+video{
+  width:40%;
+  height:300px;
+  margin-bottom: 10rem;
+}
+#pricing{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(1, 300px);
+  gap:2.5rem;
+  justify-content: center;
+  margin-bottom:3rem;
+}
+.price-card{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+}
+.bold{
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+h3, footer{
+  background-color: #ddd;
+}
+h3{
+  font-weight:normal;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.price-card > ul > li{
+  margin-bottom: 1rem;
+}
+.price-card > ul > li:last-child{
+  margin-bottom: 5rem;
+}
+button{
+  align-self: center;
+  height: 4rem;
+  width:30%;
+  margin-bottom: 1rem;
+  background-color: yellow;
+  border: none;
+}
+button:hover, footer > ul > li > a:hover{
+  cursor: pointer;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 8%;
+  width: 55%;
+  margin: 0 auto;
+}
+footer > ul > li{
+  display: block;
+  float: right;
+  font-weight:bold;
+  margin-right:2rem;
+}
+.lighter{
+  font-weight: lighter;
 }
